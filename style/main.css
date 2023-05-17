@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: top 1s, opacity 1s;
+  
+}
+
+#name.animate {
+  top: 30px;
+  opacity: 1;
+}
