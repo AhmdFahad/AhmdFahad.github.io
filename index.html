@@ -2,25 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/main.css">
-    <title>Ahmad Fahad</title>    
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Ahmad Fahad</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .center-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
 </head>
 
-<body class="bg-zinc-900 h-screen " >
-    <div class="flex justify-center items-center h-full" >
-        <div class="animate__fadeIn "  onmouseover="startAnimation()">
-
-        <h1  id="name" class="text-center text-4xl font-bold text-white animate-pulse">
-            Ahmed Fahad Abu Hamdah
-        </h1>
-        </div>
+<body class="bg-zinc-900">
+  <div class="center-div border-2 ">
+    <div class="animate__fadeIn" onmouseover="startAnimation()">
+      <h1 id="name" class="text-center text-4xl font-bold text-white animate-pulse">
+        Ahmed Fahad Abu Hamdah
+      </h1>
     </div>
-    <script src="script/script.js"></script>
+    <div id="icon-container" class="icon-container flex justify   ">
+      <a href="https://www.linkedin.com/in/ahmdfahad/" class="text-white text-2xl mx-2">
+        <img src="style/image/linkedin (1).png"   height="64" width="64" alt="Linkin" srcset="">
+      </a>
+      <a href="mailto:ahamdah@outlook.com" class="text-white text-2xl mx-2">
+        <img src="style/image/email.png" alt="git hub" height="64" width="64">        
+      </a>
+      <a href="https://github.com/AhmdFahad" class="text-white text-2xl mx-2">
+        <img src="style/image/github-sign.png"   height="65" width="64" alt="Linkin" srcset="">
+      </a>
+    </div>
+  </div>
+  
+  <script src="script/script.js"></script>
 </body>
 
 </html>
